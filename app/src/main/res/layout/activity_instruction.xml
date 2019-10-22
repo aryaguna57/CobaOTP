@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructionActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_one"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:cardBackgroundColor="#eaeaea"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/instraction_misscall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="Instruction"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/button_misscall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:text="Misscall My Phone Number"
+            android:textColor="#FFFFFF"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_instructionBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="Back"
+        android:background="@null"
+        android:elevation="@null"
+        android:layout_below="@+id/card_one"/>
+
+</RelativeLayout>

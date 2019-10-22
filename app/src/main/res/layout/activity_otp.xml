@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_two"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:cardBackgroundColor="#eaeaea"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/at_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="At My Phone Number" />
+
+            <TextView
+                android:id="@+id/label_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Enter 4 digit OTP code" />
+
+            <EditText
+                android:id="@+id/edittext_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="XXXX"
+                android:background="@drawable/edittext_1"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <Button
+                android:id="@+id/button_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/button_background"
+                android:text="Verify"
+                android:elevation="4dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
